@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+@theme {
+  /* Integrando a fonte Roboto ao Tailwind 4 */
+  --font-roboto: "Roboto", sans-serif;
+
+  /* Integrando as cores oficiais ao Tailwind 4 */
+  --color-insta-blue: #0095f6;
+  --color-insta-bg: #fafafa;
+  --color-insta-gray: #8e8e8e;
+  --color-insta-fb: #385185;
+  --color-insta-link: #00376b;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-insta-bg);
+    font-family: var(--font-roboto);
+    @apply antialiased;
+  }
+}
